@@ -24,7 +24,7 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <div className="hidden max-lg:block">
+        <div className="hidden max-lg:block z-10">
           <img
             src={hamburger}
             alt="menu"

@@ -6,7 +6,7 @@ import puma from "../../assets/images/pumaa.png";
 
 function Navbar() {
   return (
-    <div className="w-full h-21 flex justify-between md:px-8 fixed bg-white">
+    <div className="w-full h-21 flex justify-between md:px-8 fixed bg-white z-10">
       <div className="ml-8 mx-4 py-8">
         <Link to="/puma-website">
           <img src={puma} alt="logo" width={80} height={20} />
