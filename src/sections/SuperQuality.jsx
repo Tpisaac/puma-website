@@ -22,7 +22,9 @@ const SuperQuality = () => {
           Our dedication to detail and excellence ensures your satisfaction
         </p>
         <div className="mt-11">
-          <Button label="View details" />
+          <a href="https://uk.puma.com/uk/en" target="_blank">
+            <Button label="View details" />
+          </a>
         </div>
       </div>
       <div className="flex-1 flex justify-center items-center">

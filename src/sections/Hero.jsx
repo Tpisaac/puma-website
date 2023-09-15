@@ -3,6 +3,7 @@ import { bigShoe1 } from "../assets/images";
 import Button from "../components/Button";
 import { shoes, statistics } from "../constants";
 import ShoeCard from "../components/ShoeCard";
+import { Link } from "react-router-dom";
 
 import { useState } from "react";
 
@@ -28,7 +29,10 @@ const Hero = () => {
           Discover stylish Puma arrivals, quality comfort, and innovation for
           your active life.
         </p>
-        <Button label="Shop now" iconURL={arrowRight} />
+
+        <Link to="/puma-website/shop">
+          <Button label="Shop now" iconURL={arrowRight} />
+        </Link>
 
         <div className="flex justify-start items-start flex-wrap w-full mt-20 gap-16">
           {statistics.map((stat) => (

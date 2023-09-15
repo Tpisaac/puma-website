@@ -1,16 +1,16 @@
-import { offer } from "../assets/images";
+import puman from "../assets/images/sh6.png";
 import Button from "../components/Button";
 import { arrowRight } from "../assets/icons";
+import { Link } from "react-router-dom";
 
 const SpecialOffer = () => {
   return (
     <section className="flex justify-wrap items-center max-xl:flex-col-reverse gap-10 max-container">
       <div className="flex-1 ">
         <img
-          src={offer}
-          width={773}
-          height={687}
-          className="object-contain w-full"
+          src={puman}
+          width={300}
+          className="rounded-md object-contain w-full"
         />
       </div>
       <div className="flex flex-1 flex-col">
@@ -28,13 +28,20 @@ const SpecialOffer = () => {
           nothing short of exceptional.
         </p>
         <div className="mt-11 flex flex-wrap gap-4">
-          <Button label="Shop now" iconURL={arrowRight} />
-          <Button
-            label="Learn more"
-            backgroundColor="bg-white"
-            borderColor="border-slate-gray"
-            textColor="text-slate-gray"
-          />
+          <Link to="/puma-website/shop">
+            <Button label="Shop now" iconURL={arrowRight} />
+          </Link>
+          <a
+            href="https://uk.puma.com/uk/en/collections/select/fenty-x-puma"
+            target="_blank"
+          >
+            <Button
+              label="Learn more"
+              backgroundColor="bg-white"
+              borderColor="border-slate-gray"
+              textColor="text-slate-gray"
+            />
+          </a>
         </div>
       </div>
     </section>

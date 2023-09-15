@@ -1,4 +1,3 @@
-import { headerLogo } from "../assets/images";
 import puma from "../assets/images/pumaa.png";
 import { hamburger } from "../assets/icons";
 import { navLinks } from "../constants";
